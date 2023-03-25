@@ -9,7 +9,7 @@ namespace MorseEncrypt
         'H', 'C', '_', '_', 'Q', '_', 'Y', 'X', '_',
         '_', '_'};
 
-        public EncrypterEnglish() : base(ref(_letters))
+        public EncrypterEnglish()
         {
             
         }
