@@ -1,5 +1,4 @@
-﻿
-namespace MorseEncrypt
+﻿namespace MorseEncrypt
 {
     public class EncrypterEnglish : Encrypter
     {

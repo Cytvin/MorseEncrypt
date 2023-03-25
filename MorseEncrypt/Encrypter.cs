@@ -1,5 +1,4 @@
-﻿
-namespace MorseEncrypt
+﻿namespace MorseEncrypt
 {
     public class Encrypter
     {
@@ -26,15 +25,40 @@ namespace MorseEncrypt
         {
             string result = "";
 
+            text = text.ToUpper();
+
             foreach (char letter in text)
             {
-                
+                if (char.IsLetter(letter))
+                {
+                    result += _letterCodes[Array.IndexOf(_letters, letter)] + " ";
+                }
+                else if (char.IsDigit(letter))
+                {
+                    result += _digitCodes[Array.IndexOf(_digits, letter)] + " ";
+                }
             }
+
+            result = result.TrimEnd();
 
             return result;
         }
 
-        public sealed void SetAlphabeth(char[] letters)
+        public virtual string Decrypt(string text)
+        {
+            string result = "";
+
+            foreach (string charCode in text.Split(' '))
+            {
+                result += _letters[Array.IndexOf(_letterCodes, charCode)] + " ";
+            }
+
+            result = result.TrimEnd();
+
+            return result;
+        }
+
+        public void SetAlphabeth(char[] letters)
         {
             _letters = letters;
         }
