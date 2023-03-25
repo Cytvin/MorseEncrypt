@@ -11,7 +11,7 @@ namespace MorseEncrypt
 
         public EncrypterEnglish()
         {
-            
+            base.SetAlphabeth(_letters);
         }
 
         public override string Encrypt(string text)

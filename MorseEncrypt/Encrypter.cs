@@ -33,5 +33,10 @@ namespace MorseEncrypt
 
             return result;
         }
+
+        public sealed void SetAlphabeth(char[] letters)
+        {
+            _letters = letters;
+        }
     }
 }
