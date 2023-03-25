@@ -4,15 +4,19 @@
     {
         static void Main()
         {
-            string text = "Привет";
+            //EncrypterRussian encrypter = new EncrypterRussian();
 
-            EncrypterRussian encrypterRussian = new EncrypterRussian();
+            EncrypterEnglish encrypter = new EncrypterEnglish();
 
-            string textEncrypt = encrypterRussian.Encrypt(text);
+            //string text = "Привет";
+
+            string text = "Hello";
+
+            string textEncrypt = encrypter.Encrypt(text);
 
             Console.WriteLine(textEncrypt);
 
-            Console.WriteLine(encrypterRussian.Decrypt(textEncrypt));
+            Console.WriteLine(encrypter.Decrypt(textEncrypt));
         }
     }
 }
