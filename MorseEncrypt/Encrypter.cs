@@ -3,10 +3,11 @@ namespace MorseEncrypt
 {
     public class Encrypter
     {
-        private char[] _englishletters = { 'A', 'B', 'C',
-        'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
-        'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
-        'V', 'W', 'X', 'Y', 'Z'};
+        private char[] _englishletters = { 'A', 'B', 'W',
+        'G', 'D', 'E', 'V', 'Z', 'I', 'J', 'K', 'L',
+        'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'F',
+        'H', 'C', '_', '_', 'Q', '_', 'Y', 'X', '_',
+        '_', '_'};
 
         private char[] _russianLetters = {'А', 'Б', 'В', 'Г',
         'Д', 'Е', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М',
@@ -14,13 +15,16 @@ namespace MorseEncrypt
         'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю',
         'Я'};
 
-        private char[] _digits = { "1", }
+        private char[] _digits = { '1', '2', '3', '4',
+        '5', '6', '7', '8', '9', '0'};
 
         private string[] _letterCodes = { "*-", "-***", "*--",
         "--*", "-**", "*", "***-", "--**", "**", "*---", "-*-",
         "*-**", "--", "-*", "---", "*--*", "*-*", "***", "-",
         "**-", "**-*", "****", "-*-*", "---*", "----", "--*-",
         "--*--", "-*--", "-**-", "**-**", "**--", "*-*-"};
+
+        private string[] _digitCodes = 
 
         public Encrypter()
         {
