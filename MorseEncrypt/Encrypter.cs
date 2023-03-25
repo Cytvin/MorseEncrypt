@@ -3,17 +3,7 @@ namespace MorseEncrypt
 {
     public class Encrypter
     {
-        private char[] _englishletters = { 'A', 'B', 'W',
-        'G', 'D', 'E', 'V', 'Z', 'I', 'J', 'K', 'L',
-        'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'F',
-        'H', 'C', '_', '_', 'Q', '_', 'Y', 'X', '_',
-        '_', '_'};
-
-        private char[] _russianLetters = {'А', 'Б', 'В', 'Г',
-        'Д', 'Е', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М',
-        'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х',
-        'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю',
-        'Я'};
+        private char[] _letters;
 
         private char[] _digits = { '1', '2', '3', '4',
         '5', '6', '7', '8', '9', '0'};
@@ -29,7 +19,19 @@ namespace MorseEncrypt
 
         public Encrypter()
         {
-            
+
+        }
+
+        public virtual string Encrypt(string text)
+        {
+            string result = "";
+
+            foreach (char letter in text)
+            {
+                
+            }
+
+            return result;
         }
     }
 }
